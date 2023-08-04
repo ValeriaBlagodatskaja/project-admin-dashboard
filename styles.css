@@ -1,5 +1,7 @@
 .container {
   display: grid;
+  resize: both;
+  overflow: auto;
   grid-template-areas:
     "nav header"
     "nav article";
@@ -51,6 +53,27 @@ ul {
 #main-content {
   background-color: brown;
   grid-area: article;
+  display: grid;
+  grid-template-columns: 1000px auto;
 }
-.search-bar {
+.boxes {
+  display: grid;
+  grid-template-rows: repeat(3, 276px);
+  grid-template-columns: 480px 480px;
+  gap: 32px;
+}
+.project {
+  border: 1px solid black;
+}
+.messages {
+  display: grid;
+  grid-row: 413px;
+  grid-column: 353px;
+  border: 1px solid black;
+}
+.trending-followers {
+  display: grid;
+  grid-row: 413px;
+  grid-column: 353px;
+  border: 1px solid black;
 }
