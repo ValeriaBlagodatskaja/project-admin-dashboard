@@ -87,3 +87,15 @@ input {
   height: 20px;
   width: 100%;
 }
+.dashboard {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.dashboard-icon {
+  max-width: 100%;
+  height: auto;
+  fill: white;
+}
