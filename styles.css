@@ -78,7 +78,7 @@ ul {
 }
 img {
   max-width: 100%;
-  width: 20px;
+  width: 30px;
   height: auto;
 }
 input {
@@ -97,5 +97,9 @@ input {
 .dashboard-icon {
   max-width: 100%;
   height: auto;
+  fill: white;
+  width: 40px;
+}
+.home-icon {
   fill: white;
 }
