@@ -76,10 +76,11 @@ ul {
 
   border: 1px solid black;
 }
-img {
+svg {
   max-width: 100%;
   width: 30px;
   height: auto;
+  fill: white;
 }
 input {
   border: 1px solid grey;
@@ -90,9 +91,11 @@ input {
 .dashboard {
   max-width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-left: 30px;
   color: white;
+  font-size: 36px;
+  gap: 24px;
 }
 .dashboard-icon {
   max-width: 100%;
@@ -100,6 +103,32 @@ input {
   fill: white;
   width: 40px;
 }
-.home-icon {
-  fill: white;
+.search-icon {
+  fill: black;
+}
+.notification-icon {
+  fill: black;
+}
+a {
+  color: white;
+}
+
+.home,
+.profile,
+.messages-dash,
+.history,
+.tasks,
+.communities,
+.settings,
+.support,
+.privacy {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  font-size: 24px;
+  margin-top: 40px;
+}
+.bottom-dash {
+  margin-top: 106px;
 }
