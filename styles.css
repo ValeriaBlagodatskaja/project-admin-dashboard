@@ -1,6 +1,8 @@
 body {
   margin: 0;
+  font-family: "CustomFont", sans-serif;
 }
+
 .container {
   display: grid;
   resize: both;
@@ -14,29 +16,81 @@ body {
 }
 
 #header-container {
-  background-color: aqua;
+  background-color: white;
   grid-area: header;
   display: grid;
 }
-.flex-container-1 {
+.header-top {
   display: flex;
-  justify-content: space-between;
+  gap: 144px;
 }
-.flex-search {
-  justify-content: flex-start;
-}
-.header-flex-items-1 {
+.search {
   display: flex;
+  align-items: center;
+  margin-left: 56px;
+}
+
+.custom-input {
+  background-color: #e2e8f0;
+  width: 766px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+}
+
+.account {
+  display: flex;
+  align-items: center;
   gap: 36px;
+  margin-right: 100px;
 }
-.logo-menu {
+.morgan {
+  font-size: 22px;
+  font-weight: bold;
+}
+.profile-picture-top {
+  width: 60px;
+}
+.header-bottom {
   display: flex;
-  justify-content: space-between;
+  gap: 364px;
 }
-.flex-menu {
+.user-profile {
+  display: flex;
+  margin-left: 58px;
+  align-items: center;
+  gap: 16px;
+}
+.profile-picture {
+  width: 90px;
+}
+.profile-name {
+  gap: 16px;
+  font-weight: bold;
+}
+.greeting {
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+.name {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.buttons {
   display: flex;
   gap: 36px;
   list-style: none;
+  align-items: center;
+  font-weight: bold;
+}
+.btn {
+  font-size: 22px;
+  background-color: orange;
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: white;
 }
 #sidebar {
   background-color: orange;
@@ -82,12 +136,7 @@ svg {
   height: auto;
   fill: white;
 }
-input {
-  border: 1px solid grey;
-  border-radius: 5px;
-  height: 20px;
-  width: 100%;
-}
+
 .dashboard {
   max-width: 100%;
   display: flex;
@@ -128,6 +177,7 @@ a {
   gap: 36px;
   font-size: 24px;
   margin-top: 40px;
+  font-weight: bold;
 }
 .bottom-dash {
   margin-top: 106px;
