@@ -2,9 +2,15 @@ body {
   margin: 0;
   font-family: "CustomFont", sans-serif;
 }
+
 * {
   box-sizing: border-box;
 }
+
+ul {
+  list-style: none;
+}
+
 .container {
   display: grid;
   resize: both;
@@ -22,10 +28,12 @@ body {
   grid-area: header;
   display: grid;
 }
+
 .header-top {
   display: flex;
   gap: 280px;
 }
+
 .search {
   display: flex;
   align-items: center;
@@ -46,43 +54,52 @@ body {
   gap: 36px;
   margin-right: 100px;
 }
+
 .morgan {
   font-size: 22px;
   font-weight: bold;
 }
+
 .profile-picture-top {
   width: 60px;
   flex-shrink: 0;
 }
+
 .header-bottom {
   display: flex;
   gap: 364px;
 }
+
 .user-profile {
   display: flex;
   margin-left: 58px;
   align-items: center;
   gap: 16px;
 }
+
 .profile-picture {
   width: 90px;
   flex-shrink: 0;
 }
+
 .profile-name {
   gap: 16px;
   font-weight: bold;
   flex-wrap: nowrap;
 }
+
 .greeting {
   font-size: 18px;
   margin-bottom: 0;
   margin-top: 25px;
 }
+
 .name {
   font-size: 36px;
   margin-top: 0;
   margin-bottom: 25px;
 }
+
 .buttons {
   display: flex;
   gap: 36px;
@@ -91,6 +108,7 @@ body {
   font-weight: bold;
   padding-left: 30px;
 }
+
 button {
   font-size: 22px;
   background-color: #17183b;
@@ -100,6 +118,7 @@ button {
   letter-spacing: 0.5px;
   cursor: pointer;
 }
+
 #sidebar {
   background-color: #17183b;
   grid-area: nav;
@@ -107,18 +126,17 @@ button {
   grid-template-rows: 10% auto;
 }
 
-ul {
-  list-style: none;
-}
 .navigation a {
   text-decoration: none;
 }
+
 #main-content {
   background-color: #b7c0ee;
   grid-area: article;
   display: grid;
   grid-template-columns: 70% auto;
 }
+
 .boxes {
   display: grid;
   grid-template-rows: repeat(3, 270px);
@@ -126,6 +144,7 @@ ul {
   gap: 32px;
   margin-left: 26px;
 }
+
 .projects {
   font-size: 24px;
   font-weight: normal;
@@ -133,16 +152,20 @@ ul {
   margin-left: 26px;
   letter-spacing: 0.5px;
 }
+
 .title {
   font-size: 20px;
 }
+
 p {
   font-size: 18px;
 }
+
 .project-text {
   flex-grow: 1;
   font-size: 18px;
 }
+
 .project {
   border: 1px solid #dee4f7;
   border-radius: 10px;
@@ -154,17 +177,20 @@ p {
   background-color: #dee4f7;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .actions {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
 }
+
 .star-plus,
 .eye-plus,
 .source-fork {
   fill: black;
 }
+
 .announcements {
   font-size: 24px;
   font-weight: normal;
@@ -178,50 +204,64 @@ p {
   margin-right: 42px;
   padding: 32px;
   width: 75%;
-  padding: 40px;
-  margin-bottom: 44px;
+  padding: 39px;
   letter-spacing: 0.5px;
   background-color: #dee4f7;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.card-title {
-  font-size: 16px;
-}
+
 .card-text {
   font-size: 14px;
 }
+
+.card-title:not(:last-child) {
+  border-bottom: 2px solid #94a3b8;
+}
+
+.card-title {
+  font-size: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 .trending {
   font-size: 24px;
   font-weight: 400;
   margin: 1em 0;
   letter-spacing: 0.5px;
 }
+
 .trending-followers {
   display: grid;
   border-radius: 10px;
   border: 1px solid #dee4f7;
   margin-right: 42px;
   padding: 30px;
-  gap: 32px;
+  gap: 30px;
   width: 75%;
   letter-spacing: 0.5px;
   background-color: #dee4f7;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .follower-1 {
   display: flex;
   gap: 10px;
 }
+
 .avatar-trending {
   width: 60px;
 }
+
 .trending-project {
   margin-top: 0;
 }
+
 .account-name {
   display: flex;
   align-items: center;
 }
+
 svg {
   max-width: 100%;
   width: 30px;
@@ -245,15 +285,19 @@ svg {
   fill: #f5f5f5;
   width: 40px;
 }
+
 .search-icon {
   fill: black;
 }
+
 .notification {
   flex-shrink: 0;
 }
+
 .notification-icon {
   fill: black;
 }
+
 a {
   color: #f5f5f5;
 }
@@ -276,9 +320,11 @@ a {
   font-weight: normal;
   letter-spacing: 0.5px;
 }
+
 .bottom-dash {
   margin-top: 106px;
 }
+
 .trending-project,
 .card-text,
 .project-text {
